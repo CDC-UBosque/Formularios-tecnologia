@@ -2,3 +2,5 @@
 jade/
 
 html/
+
+*.jade
