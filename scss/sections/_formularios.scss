@@ -1,0 +1,100 @@
+/* ---------------------------------- formularios -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.formulario_tecnologia{
+
+	text-align: center;
+	
+		h1{
+			word-break: break-word;
+			display: block;
+			position: relative;
+			@include font_universal (
+				$font_family_line_height: 47px,
+				$font_family_weight: 300,
+				$font_family_size: 38px,
+				$font_family_color: $color_green,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_black
+			);
+		}
+		
+		p{
+			word-break: break-word;
+			display: block;
+			position: relative;
+			@include font_universal (
+				$font_family_line_height: 20px,
+				$font_family_weight: 300,
+				$font_family_size: 16px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_lato_regular
+			);
+		}
+		
+		form{
+			max-width: 300px;
+			margin: 2rem auto 0;
+			
+			label{
+				display: block;
+				margin-bottom: 0.5rem;
+				text-align: left;
+				@include font_universal (
+					$font_family_line_height: 20px,
+					$font_family_weight: 300,
+					$font_family_size: 16px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_bold
+				);
+			}
+			
+			input{
+				border: 2px solid $color_green;
+				text-align: left;
+				border-radius: .8rem;
+				width: 92%;
+				padding: .5rem;
+				margin-bottom: 1.5rem;
+			}
+			
+			input[type="submit"]{
+				margin-top: 2rem;
+				@include prefix(transition, all 0.3s ease, webkit moz o ms);
+				@include btn_green;
+				display: inline-block;
+				width: auto;
+			}
+			
+		}
+		
+		.fallback_link{
+			margin: 0 auto 1rem;
+			
+			a{
+				@include prefix(transition, all 0.3s ease, webkit moz o ms);
+				@include font_universal (
+					$font_family_line_height: 16px,
+					$font_family_weight: 300,
+					$font_family_size: 14px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_lato_regular
+				);
+				
+				&:hover{
+					text-decoration: none;
+				}
+				
+			}
+			
+		}
+	
+}
+
+
+
+
